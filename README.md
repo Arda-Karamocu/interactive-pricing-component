@@ -1,69 +1,34 @@
-# React + TypeScript + Vite
+# Interactive Pricing Component
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a solution to the [Frontend Mentor - Interactive Pricing Component Challenge](https://www.frontendmentor.io/challenges/interactive-pricing-component-t0m8PIyY8).  
+Built using **React** and **Tailwind CSS**.
 
-Currently, two official plugins are available:
+## 📌 Features
+- Fully responsive design  
+- Dynamic **range slider** for adjusting pageviews and price  
+- **Monthly / Yearly billing** toggle with 25% discount applied to yearly plans  
+- Smooth gradient progress bar on slider  
+- Pricing updates instantly based on slider and toggle values  
+- Built with clean, reusable React components and Tailwind utilities
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Built With
+- **React** (Functional Components, Hooks)  
+- **Tailwind CSS** (Utility-first styling)  
+- **Vite** for fast development build  
 
-## Expanding the ESLint configuration
+## 📷 Preview
+![Project Preview](design/desktop-design.jpg) *(Replace with your screenshot)*
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📂 Installation & Setup
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/interactive-pricing-component.git
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+# Navigate into the project folder
+cd interactive-pricing-component
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+# Install dependencies
+bun install
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+# Run the project locally
+bun run dev
