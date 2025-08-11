@@ -17,7 +17,7 @@ Built using **React** and **Tailwind CSS**.
 - **Vite** for fast development build  
 
 ## 📷 Preview
-![Project Preview](design/desktop-design.jpg) *(Replace with your screenshot)*
+![Project Preview](design/desktop-design.jpg)
 
 ## 📂 Installation & Setup
 ```bash
